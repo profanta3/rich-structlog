@@ -163,6 +163,7 @@ class RichConsoleRenderer:
             "process_name",
             "filename",
             "exc_info",
+            "qual_name",
         ]
         ctx = {k: v for k, v in event_dict.items() if k not in exclude}
         level: str = event_dict["level"].upper()
